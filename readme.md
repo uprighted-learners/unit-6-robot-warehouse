@@ -41,8 +41,6 @@ Copy the connection string provided. This string contains the necessary informat
 ### Step 5: Connect Your Application
 To access our database on replit, we will need to add our connections string to our secret keys, in VScode, we do this in our .env files
 
-On replit, in tools in the bottom left corner, select `Secrets` add a new secret with the key of `MONGO_URL` and paste your connection string for the value
-
 ### Example connection string (replace `<username>`, `<password>`, and `<clustername>` with your actual credentials)
 `mongodb+srv://<username>:<password>@<clustername>.mongodb.net/<dbname>`
 
