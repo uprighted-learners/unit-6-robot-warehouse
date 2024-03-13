@@ -22,7 +22,7 @@ Name your cluster "mongo-practice"
 
 Click the Create Cluster button to initiate the cluster creation process.
 
-![Cluster set up example](./Screenshot(83).png)
+![Cluster set up example](./Screenshot.png)
 
 ### Step 3: Configure Cluster Settings
 Set up authentication by creating a MongoDB user with a username and password. MongoDB can autogenerate a secure password for you, make sure you copy the password for later use
