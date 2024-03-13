@@ -18,7 +18,7 @@ After logging in, click on the Build a Cluster button.
 
 Choose the free plan. You can also edit your provider and region
 
-Name your cluster "replit"
+Name your cluster "mongo-practice"
 
 Click the Create Cluster button to initiate the cluster creation process.
 
