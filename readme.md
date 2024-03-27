@@ -27,7 +27,7 @@ Click the Create Cluster button to initiate the cluster creation process.
 ### Step 3: Configure Cluster Settings
 Set up authentication by creating a MongoDB user with a username and password. MongoDB can autogenerate a secure password for you, make sure you copy the password for later use
 
-In the Connection Security section, configure your IP Whitelist settings to allow connections from your application servers. You can add your IP address or specify a range. Since we are using replit, we will need to add the IP address `0.0.0.0/0`, however, it is crucial to note that this setting grants access to any IP address, and as a best practice, this configuration should not be employed in production-level applications due to security considerations.
+In the Connection Security section, configure your IP Whitelist settings to allow connections from your application servers. You can add your IP address or specify a range, choose to use your own IP address
 
 Once the cluster is created, click on the Connect button.
 
@@ -39,7 +39,7 @@ Choose the Connect Your Application option.
 Copy the connection string provided. This string contains the necessary information to connect your application to the MongoDB Atlas cluster.
 
 ### Step 5: Connect Your Application
-To access our database on replit, we will need to add our connections string to our secret keys, in VScode, we do this in our .env files
+To access our database, we will need to add our connections string to our secret keys, in VScode, we do this in our .env files
 
 ### Example connection string (replace `<username>`, `<password>`, and `<clustername>` with your actual credentials)
 `mongodb+srv://<username>:<password>@<clustername>.mongodb.net/<dbname>`
