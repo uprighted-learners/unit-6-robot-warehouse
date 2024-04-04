@@ -4,51 +4,15 @@ In this lab we will be familiarizing ourselves with our database structure, and 
 
 We will be creating a warehouse (database) that houses robots (collection). Every robot (the document) will have unique properties.
 
+## Connect 
 
-## Setting Up MongoDB Atlas Cluster
-MongoDB Atlas is a fully managed cloud database service that makes it easy to set up, operate, and scale MongoDB deployments. Follow the steps below to create a MongoDB Atlas cluster:
+Open Compass and click on the green "Connect" button. The default connection is 'localhost'. When you set up a database in the cloud, this is where the connection string will go.
 
-### Step 1: Sign Up or Log In
-If you don't have an account, sign up for MongoDB Atlas. If you already have an account, log in to your MongoDB Atlas account.
-
-[MongoDB Atlas](https://cloud.mongodb.com/)
-
-### Step 2: Create a New Cluster
-After logging in, click on the Build a Cluster button.
-
-Choose the free plan. You can also edit your provider and region
-
-Name your cluster "mongo-practice"
-
-Click the Create Cluster button to initiate the cluster creation process.
-
-![Cluster set up example](./Screenshot.png)
-
-### Step 3: Configure Cluster Settings
-Set up authentication by creating a MongoDB user with a username and password. MongoDB can autogenerate a secure password for you, make sure you copy the password for later use
-
-In the Connection Security section, configure your IP Whitelist settings to allow connections from your application servers. You can add your IP address or specify a range, choose to use your own IP address
-
-Once the cluster is created, click on the Connect button.
-
-### Step 4: Connect to Your Cluster
-After configuring the cluster settings, click on the Connect button again.
-
-Choose the Connect Your Application option.
-
-Copy the connection string provided. This string contains the necessary information to connect your application to the MongoDB Atlas cluster.
-
-### Step 5: Connect Your Application
-To access our database, we will need to add our connections string to our secret keys, in VScode, we do this in our .env files
-
-### Example connection string (replace `<username>`, `<password>`, and `<clustername>` with your actual credentials)
-`mongodb+srv://<username>:<password>@<clustername>.mongodb.net/<dbname>`
-
-In compass, we will use the same connection string to view our database. In New Connection, paste your connection string and click `Save & Connect` to get started with our lab!
+Upon loading up on `localhost:27017`, you'll see a large white field and a grey sidebar on the left. Both areas contain our database names; the white box shares granular information, and the sidebar nav acts in part as a directory view.
 
 ## Creating the Warehouse in MongoDB Compass
 
-At the bottom of the grey sidebar, there will be a + button to create a database. In the pop-up form, enter the database name as "warehouse" and the collection name as "robots" and create the database.
+In the sidebar, above the search bar, there will be a + button to create a database. In the pop-up form, enter the database name as "warehouse" and the collection name as "robots" and create the database.
 
 In the sidebar, you should now see the warehouse database with the robots collection within it.
 
@@ -140,4 +104,11 @@ Documents are what you have been working with: this shows all documents within t
 [Indexes](https://www.mongodb.com/docs/compass/current/indexes/) is for special data structures (indexes) that improve query performance by portioning a collection's data.
 
 [Validation](https://www.mongodb.com/docs/manual/core/schema-validation/) is for setting up schema validation rules within MongoDB. You will be setting up schema validation within your JavaScript in this course.
+
+## Going Further
+
+Rather than connect to the localhost, create a MongoDB Atlas cluster and connect to it via Compass. 
+
+This cluster will place your data within the cloud, rather than it existing solely on your local machine. When you begin to collaborate with other developers and put software into production, this is the route you will take. Localhost's main purpose is for learning and self-testing.
+
 
