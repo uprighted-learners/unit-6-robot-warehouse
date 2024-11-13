@@ -1,6 +1,6 @@
-# Lab: Robot Warehouse with Compass
+# exercise: Robot Warehouse with Compass
 
-In this lab we will be familiarizing ourselves with our database structure, and operations by creating a couple of different collections, and playing around with some data using Compass, MongoDB's GUI tool. 
+In this exercise we will be familiarizing ourselves with our database structure, and operations by creating a couple of different collections, and playing around with some data using Compass, MongoDB's GUI tool. 
 
 We will be creating a warehouse (database) that houses robots (collection). Every robot (the document) will have unique properties.
 
@@ -109,6 +109,6 @@ Documents are what you have been working with: this shows all documents within t
 
 Rather than connect to the localhost, create a MongoDB Atlas cluster and connect to it via Compass. 
 
-This cluster will place your data within the cloud, rather than it existing solely on your local machine. When you begin to collaborate with other developers and put software into production, this is the route you will take. Localhost's main purpose is for learning and self-testing.
+This cluster will place your data within the cloud, rather than it existing solely on your local machine. When you begin to colexerciseorate with other developers and put software into production, this is the route you will take. Localhost's main purpose is for learning and self-testing.
 
 
